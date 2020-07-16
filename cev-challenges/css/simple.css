@@ -22,12 +22,15 @@ h1, p {
     cursor: default;
 }
 
+img.ch2 {
+    width: 400px;
+    margin: 20px;
+}
+
 fieldset.borda1 {
     width: 500px;
     margin: 30px auto;
     background-color: white;
-    font-weight: normal;
-    color: black;
     transition: 0.1s all;
     border-radius: 5px;
 }
@@ -36,6 +39,7 @@ fieldset.borda1:hover {
     background-color: black;
     color: white;
     font-weight: bold;
+    filter: grayscale(100%);
 }
 
 footer {
