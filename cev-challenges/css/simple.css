@@ -27,6 +27,11 @@ img.ch2 {
     margin: 20px;
 }
 
+img.ch5 {
+    padding: 5px 0 0 0;
+    filter: contrast(0);
+}
+
 fieldset.borda1 {
     width: 500px;
     margin: 30px auto;
@@ -61,4 +66,8 @@ a:hover {
 ul {
     list-style-type: armenian;
     list-style-position: inside;
+}
+
+ul.contato {
+    list-style-type: none;
 }
