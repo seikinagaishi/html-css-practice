@@ -13,6 +13,8 @@ nav {
     font-family: 'Segoe UI', sans-serif;
     font-weight: bold;
     font-size: 15px;
+    position: fixed;
+    width: 100%;
 }
 
 img.icone {
@@ -65,4 +67,76 @@ a.link-nav {
 
 a.link-nav:hover {
     background-color: #293b51;
+}
+
+/* Main */
+
+main {
+    display: flex;
+}
+
+div#stream-info {
+    background-color: #141b28;
+    color: #dfe1e3;
+    width: 75%;
+    height: 100vh;
+}
+
+div#player {
+    height: 83vh;
+}
+
+div#info {
+    background-color: #212c3d;
+    height: 17vh;
+    width: 99.5%;
+}
+
+div#stream-bar {
+    background-color: #3F4B5C;
+    height: 8vh;
+    display: flex;
+}
+
+div#stream-name {
+    width: 82%;
+    display: flex;
+}
+
+div#skills {
+    margin-left: 0.2%;
+    width: 17.8%;
+    display: flex;
+}
+
+div#skills img {
+    margin: auto 3px auto auto;
+}
+
+p.skill {
+    margin: auto auto auto 3px;
+    font-family: arial;
+}
+
+div#skills:hover {
+    background-color: #3F4B5C;
+    cursor: pointer;
+}
+
+div#stream-name, div#skills {
+    background-color: #29374a;
+}
+
+img.web-pic {
+    width: 7%;
+    cursor: pointer;
+}
+
+/* Chat */
+
+aside {
+    background-color: #212c3d;
+    color: #dfe1e3;
+    width: 25%;
+    height: 100vh;
 }
