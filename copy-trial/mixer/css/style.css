@@ -281,6 +281,12 @@ aside {
     margin-top: 65px;
 }
 
+div#bar-border {
+    width: 100%;
+    height: 2px;
+    background-color: #394453;
+}
+
 div#chat-tag {
     display: flex;
 }
