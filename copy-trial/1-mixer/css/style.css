@@ -515,3 +515,15 @@ div#chat-bar {
 div#chat-bar:hover {
     background-color: #0075d5;
 }
+
+input.chat-entry {
+    width: 80%;
+    height: 45px;
+    margin: 72vh 1.5%;
+    border-radius: 50px;
+    border: none;
+    background-color: #141b28;
+    color: #fff;
+    font-family: 'Segoe UI', sans-serif;
+    padding-left: 15%;
+}
