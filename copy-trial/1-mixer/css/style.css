@@ -247,7 +247,7 @@ div#options {
     list-style-type: none;
 }
 
-div#opt {
+div.opt {
     margin: 0 20px;
     height: 40px;
     font-family: 'Arial';
@@ -257,7 +257,7 @@ div#opt {
     cursor: pointer
 }
 
-div#opt:hover {
+div.opt:hover {
     background-color: #424B5A;
 }
 
@@ -302,14 +302,14 @@ div#streamer-description {
     width: 70%;
 }
 
-div#block {
+div.block {
     background-color: #1E2837;
     margin: 20px 10px 5px 10px;
     padding: 20px;
     border-radius: 5px;
 }
 
-div#block p {
+div.block p {
     margin: 5px 0;
 }
 
@@ -357,35 +357,35 @@ span.pink {
 
 /* Mini-videos */
 
-div#video, div#video2 {
+div.video, div.video2 {
     margin: 20px 0;
     cursor: pointer;
     border-radius: 8px;
 }
 
-div#video:hover, div#video2:hover {
+div.video:hover, div.video2:hover {
     border: 3px solid #1EB8EB;
 }
 
-div#thumb, div#thumb2, div#desc, div#desc2 {
+div.thumb, div.thumb2, div.desc, div.desc2 {
     width: 100%;
 }
 
-div#thumb, div#thumb2 {
+div.thumb, div.thumb2 {
     background-color: #fff;
     border-radius: 5px 5px 0 0;
 }
 
-div#thumb {
+div.thumb {
     height: 120px;
 }
 
-div#desc, div#desc2 {
+div.desc, div.desc2 {
     background-color: #2C374B;
     border-radius: 0 0 5px 5px;
 }
 
-div#desc {
+div.desc {
     height: 70px;
 }
 
@@ -427,16 +427,16 @@ div#transmissions, div#clips {
     /* visibility: hidden; */
 }
 
-div#video2 {
+div.video2 {
     width: 30%;
     margin: 15px;
 }
 
-div#thumb2 {
+div.thumb2 {
     height: 170px;
 }
 
-div#desc2 {
+div.desc2 {
     height: 70px;
 }
 
