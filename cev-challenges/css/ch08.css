@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+body {
+    background-color: #222;
+}
+
+header {
+    background-color: #39C65D;
+    text-align: center;
+}
+
+header p {
+    color: #444444;
+}
+
+p, ul#more li {
+    font-size: 0.9em;
+}
+
+nav {
+    display: none;
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+h2 {
+    border-radius: 5px;
+    font-size: 1.2em;
+}
+
+h3, p {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+h1, h2, header {
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+h1, h2, p{
+    margin: 0 10px;
+    padding: 10px;
+}
+
+section {
+    text-align: justify;
+    color: #fff;
+    margin: 0 10px;
+}
+
+section h2 {
+    color: black;
+}
+
+div#image-box {
+    display: flex;
+    margin: 10px;
+}
+
+div.image-item {
+    width: 60px;
+    height: 100px;
+}
+
+div#image2 {
+    width: 100%;
+    height: 200px;
+}
+
+div#image3 {
+    width: 60px;
+    height: 75px;
+}
+
+div.image-item, div#image2, div#image3, div#video-item {
+    background-color: #39C65D;
+    transition: all 0.2s;
+    border-radius: 5px;
+    margin: 0 auto 10px;
+}
+
+div.image-item:hover, div#image2:hover, div#image3:hover {
+    background-color: #fff;
+}
+
+section#video1 {
+    background-color: #fff;
+    margin: 0;
+    padding: 10px 0 1px;
+}
+
+div#video-item {
+    width: 90%;
+    height: 200px;
+}
+
+div#video-item:hover {
+    background-color: black;
+}
+
+div#refs {
+    width: 90%;
+    margin: 10px auto;
+    color: black;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+div#refs h3 {
+    margin: 10px 0;
+    border-radius: 5px 5px 0 0;
+    font-size: 1.5em;
+    padding-left: 10px;
+}
+
+ul#more {
+    columns: 2;
+    list-style-type: disc;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    list-style-position: inside;
+    text-align: center;
+    margin: 10px;
+}
+
+ul#more li {
+    background-color: #39C65D;
+    color: white;
+    transition: all 0.2s;
+}
+
+ul#more li:hover {
+    background-color: black;
+}
+
+footer, div#refs h3,  h2{
+    background-color: #39C65D;
+}
+
+p.foot {
+    font-style: italic;
+    text-align: center;
+    padding: 4px;
+}
+
+span#info {
+    font-weight: bold;
+}
+
+div#voltar {
+    background-color: #000;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    margin: 10px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.1s;
+}
+
+div#voltar:hover {
+    background-color: white;
+}
+
+@media screen and (min-width:700px) and (max-width: 1000px) {
+    div.image-item {
+        width: 150px;
+        height: 200px;
+    }
+
+    div#image2, div#video-item {
+        width: 650px;
+        height: 300px;
+    }
+
+    div#image3 {
+        width: 100px;
+        height: 150px;
+    }
+}
+
+@media screen and (min-width:1001px) {
+    div.image-item {
+        width: 230px;
+        height: 270px;
+    }
+
+    div#image2, div#video-item {
+        width: 800px;
+        height: 400px;
+    }
+
+    div#image3 {
+        width: 180px;
+        height: 160px;
+    }
+}
+
+@media screen and (min-width:700px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.4em;
+    }
+
+    div#refs h3 {
+        font-size: 1.4em;
+        padding-left: 20px;
+    }
+
+    p, ul#more li {
+        font-size: 1em;
+    }
+
+    section#video1 {
+        padding: 30px 0;
+    }
+
+    ul#more li {
+        padding: 5px;
+    }
+}
