@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CEV - Challenge 10</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+
+            header {
+                font-family: 'Segoe UI', Tahoma, sans-serif;
+                text-align: center;
+                padding: 20px 0;
+                background-color: black;
+                color: white;
+            }
+
+            span#author {
+                font-weight: bold;
+            }
+
+            main p {
+                font-family: 'Bebas Neue', cursive;
+                font-size: 14px;
+                margin: 30px;
+            }
+
+            main section aside p {
+                color: white;
+            }
+
+            aside {
+                background-color: black;
+                width: 250px;
+                filter: opacity(0.7);
+                margin: 50px 0;
+                position: absolute;
+            }
+
+            section {
+                background-image: url(image/ch10/design-image.jpg);
+                background-size: cover;
+                background-attachment: fixed;
+                height: 350px;
+            }
+
+            @media screen and (min-width: 700px) {
+                main p {
+                    font-size: 20px;
+                    margin: 30px;
+                }
+                aside {
+                    width: 415px;
+                    margin: 50px 0;
+                }
+
+                section {
+                    height: 500px;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <h1>TITLE</h1>
+            <p id="credits">
+                by <span id="author">Person</span>
+            </p>
+        </header>
+
+        <main>
+            <article>
+                <p>
+                    Lorem ipsum dolor sit <br>
+                    amet consectetur adipisicing elit. <br>
+                    Labore explicabo corporis <br>
+                    cumque eos quia culpa ad, <br>
+                    laborum aut perspiciatis unde incidunt <br>
+                    porro commodi id ipsum saepe <br>
+                    eligendi illo dolore eum.
+                </p>
+            </article>
+
+            <section>
+                <aside>
+                    <p>
+                        Lorem ipsum dolor sit <br>
+                        amet consectetur adipisicing elit. <br>
+                        Labore explicabo corporis <br>
+                        cumque eos quia culpa ad, <br>
+                        laborum aut perspiciatis unde incidunt <br>
+                        porro commodi id ipsum saepe <br>
+                        eligendi illo dolore eum.
+                    </p>
+                </aside>
+            </section>
+
+            <article>
+                <p>
+                    Lorem ipsum dolor sit <br>
+                    amet consectetur adipisicing elit. <br>
+                    Labore explicabo corporis <br>
+                    cumque eos quia culpa ad, <br>
+                    laborum aut perspiciatis unde incidunt <br>
+                    <br>
+                    porro commodi id ipsum saepe <br>
+                    eligendi illo dolore eum.
+                </p>
+            </article>
+        </main>
+    </body>
+</html>
