@@ -58,6 +58,7 @@ div#home-button {
     background-color: gray;
     border-radius: 50px;
     margin: 548px auto 0;
+    cursor: pointer;
     transition: all 0.2s;
 }
 
@@ -71,7 +72,6 @@ div#home-button:hover {
 div#phone-header {
     width: 100%;
     height: 20px;
-    /* background-color: gray; */
     display: flex;
     justify-content: flex-end;
     color: white;
@@ -108,6 +108,7 @@ div#header-battery {
 div#phone-content {
     width: 100%;
     height: 400px;
+    transition: all 0.2s;
 }
 
 div#climate {
@@ -115,6 +116,11 @@ div#climate {
     height: 160px;
     color: white;
     font-family: roboto, sans-serif;
+    cursor: pointer;
+}
+
+div#climate:hover {
+    filter: brightness(0.9);
 }
 
 div#climate h1, div#climate h2 {
@@ -175,15 +181,28 @@ img#refresh {
     margin-top: -1px;
 }
 
-input#search-tool {
+input#search-tool, input#search-tool2 {
     width: 220px;
     height: 30px;
     margin: auto;
-    text-align: right;
-    padding-right: 40px;
     border-radius: 50px;
     border: none;
     background-color: white;
+    cursor: pointer;
+}
+
+input#search-tool {
+    text-align: right;
+    padding-right: 40px;
+}
+
+input#search-tool2 {
+    padding-left: 40px;
+    box-shadow: 0px 1px 5px;
+}
+
+input#search-tool:hover {
+    background-color: rgb(196, 196, 196);
 }
 
 img.icon {
@@ -238,29 +257,33 @@ div#active-tab {
 
 /* footer */
 
+div#phone-footer {
+    transition: all 0.2s;
+}
+
 div#phone-footer, div#app-bar, div#search {
     width: 100%;
     height: 80px;
     display: flex;
 }
 
-div.block {
+div.block, div#block-applications {
     text-align: center;
     color: white;
     font-size: 14px;
     margin: auto;
-    
+    cursor: pointer;
 }
 
 div.block:hover div.footer-icon {
     background-color: orange;
 }
 
-div.block:hover p {
+div.block:hover p, div#block-applications:hover p {
     color: orange;
 }
 
-div.footer-icon, div.block p {
+div.footer-icon, div.block p, div#block-applications p {
     transition: all 0.1s;
 }
 
@@ -283,8 +306,112 @@ div#phone-footer td {
     transition: all 0.1s;
 }
 
-div#phone-footer div.block:hover td {
+div#phone-footer div#block-applications:hover td {
     background-color: orange;
+}
+
+/* YouTube */
+
+div#app-screen {
+    background-color: white;
+    height: 480px;
+    display: none;
+}
+
+div#app-header {
+    width: 100%;
+    height: 40px;
+    background-color: white;
+    display: flex;
+}
+
+div#app-logo {
+    background-color: red;
+    width: 30px;
+    height: 20px;
+    border-radius: 5px;
+    margin: auto 0 auto 10px;
+}
+
+div#app-header h2 {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 8px;
+}
+
+div.app-content {
+    width: 100%;
+    height: 180px;
+    background-image: url('../image/phone/bg3.jpg');
+    background-size: cover;
+    /* Foto de 隔壁光头老王 WangMing'Photo no Pexels */
+}
+
+div.counter {
+    background-color: black;
+    filter: opacity(0.8);
+    text-align: center;
+    border-radius: 5px;
+    font-family: 'Arial';
+    font-size: 14px;
+    width: 40px;
+    color: white;
+    position: absolute;
+    margin: 150px 0 0 80%;
+}
+
+div#app-description {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    padding: 5px 0;
+}
+
+div#profile {
+    width: 35px;
+    height: 35px;
+    margin: 5px;
+    border-radius: 50px;
+    background-color: purple;
+}
+
+div#app-desc-info {
+    font-family: 'Segoe UI', sans-serif;
+}
+
+div#app-desc-info h3 {
+    font-size: 16px;
+}
+
+div#app-desc-info p {
+    font-size: 13px;
+}
+
+span#link {
+    color: blue;
+    cursor: pointer;
+}
+
+/* Aplications */
+
+div#aplic {
+    display: none;
+}
+
+div#aplic h1 {
+    text-align: center;
+    margin: 10px 0;
+    color: white;
+    font-weight: normal;
+    font-family: 'Arial';
+    font-size: 20px;
+}
+
+/* google page */
+
+div#google-page {
+    display: none;
 }
 
 /* 
