@@ -26,6 +26,7 @@ for (index in appElement) {
         bgElement.style.backgroundImage = 'none';
         contentElement.style.display = 'none';
         footerElement.style.display = 'none';
+        aplicScreen.style.display = 'none';
 
         appScreenElement.style.display = 'inline';
     }

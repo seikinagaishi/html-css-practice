@@ -17,7 +17,6 @@ main {
 
 section#phone-screen {
     background-color: white;
-    background-image: url(../image/phone/bg.jpg);
     background-size: cover;
     width: 290px;
     height: 500px;
@@ -25,6 +24,8 @@ section#phone-screen {
     left: 50%;
     position: absolute;
     transform: translate(-50%, -50%);
+    background-image: url(../image/phone/bg.jpg);
+    /* Foto de Guilherme Rossi no Pexels */
 }
 
 div#asset1 {
@@ -318,6 +319,10 @@ div#app-screen {
     display: none;
 }
 
+div#app-logo, div.app-content, div#profile, div#app-desc-info h3 {
+    cursor: pointer;
+}
+
 div#app-header {
     width: 100%;
     height: 40px;
@@ -342,9 +347,9 @@ div#app-header h2 {
 
 div.app-content {
     width: 100%;
-    height: 180px;
-    background-image: url('../image/phone/bg3.jpg');
+    height: 175px;
     background-size: cover;
+    background-image: url('../image/phone/bg3.jpg');
     /* Foto de 隔壁光头老王 WangMing'Photo no Pexels */
 }
 
