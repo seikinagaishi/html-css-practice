@@ -1,0 +1,12 @@
+#0075d5 -> azul  #1FBAED
+
+degradê
+#DA3F8F -> rosa
+#942629 -> rosa escuro
+
+#2C374B -> title
+
+#2cc4f4 -> mix
+
+industryk -> títulos - sparks
+sengou ui -> info
