@@ -6,6 +6,9 @@
         <title>Gameboy - Trial</title>
         <link rel="shortcut icon" href="img/gameboy.svg" type="image/x-icon">
         <link rel="stylesheet" href="style.css">
+
+        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     </head>
 
     <body>
@@ -36,39 +39,47 @@
                 
                 <div id="controller-block">
                     <h1>
-                        Nintendo
-                        <span id="logo">GAME BOY</span>
-                        <span id="tm">TM</span>
+                        Nintendo<span id="logo">GAME BOY</span><span id="tm">TM</span>
                     </h1>
         
                     <div id="joypad">
-                        <div id="dpad">
-                            <div id="vert"></div>
-                            <div id="hor"></div>
-                        </div>
-        
-                        <div id="buttons">
-                            <div class="block">
-                                <div class="btn" id="b"></div>
-                                <p>B</p>
+                        <div id="main-pad">
+                            <div id="dpad">
+                                <div id="hor">
+                                    <div class="dhor" id="left"></div>
+                                    <div class="dhor" id="right"></div>
+                                </div>
+                                <div id="vert">
+                                    <div class="dver" id="up"></div>
+                                    <div class="dver" id="down"></div>
+                                </div>
+                                <div id="dpad-detail"></div>
                             </div>
-                            
-                            <div class="block">
-                                <div class="btn" id="a"></div>
-                                <p>A</p>
+            
+                            <div id="buttons">
+                                <div class="block">
+                                    <div class="btn" id="b"></div>
+                                    <p>B</p>
+                                </div>
+                                
+                                <div class="block">
+                                    <div class="btn" id="a"></div>
+                                    <p>A</p>
+                                </div>
                             </div>
-                           
                         </div>
-        
-                        <br>
         
                         <div id="conf">
                             <div class="block">
-                                <div class="conf-btn" id="select"></div>
+                                <div id="conf-btn-block">
+                                    <div class="conf-btn" id="select"></div>
+                                </div>
                                 <p>SELECT</p>
                             </div>
                            <div class="block">
-                                <div class="conf-btn" id="start"></div>
+                                <div id="conf-btn-block">
+                                    <div class="conf-btn" id="start"></div>
+                                </div>
                                 <p>START</p>
                            </div>
                         </div>
