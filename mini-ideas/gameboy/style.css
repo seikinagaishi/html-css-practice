@@ -343,3 +343,48 @@ h1, p {
     margin: 5px;
     border-radius: 10px;
 }
+
+/* Screen-Application */
+
+#screen table {
+    width: 101%;
+    height: 100%;
+    background-color: #2e5a39;
+}
+
+#screen table tr,
+#screen table td {
+    width: 14.3%;
+    height: 14.3%;
+    /* background-color: #9a9d4c;
+    border: 1px dotted #535525; */
+    background-color: rgb(0, 0, 0);
+    border: 1px dotted #204b2b;
+}
+
+#player,
+#goal {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    background-repeat: no-repeat;
+}
+
+@keyframes press-start {
+    0% {color: #fffbe2;}
+    50% {color: black;}
+    100% {color: #fffbe2;}
+}
+
+.msg {
+    text-align: center;
+    margin-top: 36%;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 12px;
+}
+
+#begin {
+    animation-name: press-start;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+}
