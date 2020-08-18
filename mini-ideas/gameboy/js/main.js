@@ -51,9 +51,11 @@ function startGame() {
         document.querySelector('#left').addEventListener('click', leftBtn)
         document.querySelector('#right').addEventListener('click', rightBtn)
         document.querySelector('#a').addEventListener('click', aBtn)
+        document.querySelector('#b').addEventListener('click', bBtn)
+        document.querySelector('#select').addEventListener('click', selectBtn)
 
         function upBtn() {
-            if(gameEnded == false) {
+            if(gameEnded == false && selectStatus == false) {
                 if(playerPositionY > -149) {
                     playerPositionY += -22
                     playerElement.style.marginTop = playerPositionY + 'px'
@@ -65,7 +67,7 @@ function startGame() {
         }
 
         function downBtn() {
-            if(gameEnded == false) {
+            if(gameEnded == false && selectStatus == false) {
                 if(playerPositionY < -17) {
                     playerPositionY += 22
                     playerElement.style.marginTop = playerPositionY + 'px'
@@ -77,7 +79,7 @@ function startGame() {
         }
 
         function leftBtn() {
-            if(gameEnded == false) {
+            if(gameEnded == false && selectStatus == false) {
                 if(playerPositionX > 5) {
                     playerPositionX += -27
                     playerElement.style.marginLeft = playerPositionX + 'px'
@@ -89,7 +91,7 @@ function startGame() {
         }
 
         function rightBtn() {
-            if(gameEnded == false) {
+            if(gameEnded == false && selectStatus == false) {
                 if(playerPositionX < 167) {
                     playerPositionX += +27
                     playerElement.style.marginLeft = playerPositionX + 'px'
@@ -101,7 +103,7 @@ function startGame() {
         }
 
         function aBtn() {
-            if(gameEnded == false) {
+            if(gameEnded == false && selectStatus == false) {
                 if(playerPositionX == crownPositionX && playerPositionY == crownPositionY + 2) {
                     screen.removeChild(tableElement)
 
@@ -117,12 +119,50 @@ function startGame() {
         function selectBtn() {
             if(gameEnded == false && selectStatus == false) {
                 selectStatus = true
+                // document.querySelector('#config').style.display = 'block';
+
+                var selectElement = document.createElement('div')
+                selectElement.setAttribute('id', 'config')
+
+                for(i = 0; i < 2; i++) {
+                    var moveCommandBlock = document.createElement('div')
+                    moveCommandBlock.setAttribute('class', 'buttonBlock')
+
+                    var buttonImg = document.createElement('img')
+                    buttonImg.setAttribute('class', 'buttonImg')
+
+                    moveCommandBlock.appendChild(buttonImg)
+                    if(i == 0) {
+                        buttonImg.setAttribute('src', 'img/move.png')
+                        moveCommandBlock.appendChild(document.createTextNode('Move'))
+                    }
+                    else {
+                        buttonImg.setAttribute('src', 'img/a.png')
+                        moveCommandBlock.appendChild(document.createTextNode('Interact'))
+                    }
+
+                    selectElement.appendChild(moveCommandBlock)
+                }
+                
+                var closeButton = document.createElement('div')
+                closeButton.setAttribute('class', 'closeBlock')
+
+                var imgB = document.createElement('img')
+                imgB.setAttribute('src', 'img/b.png')
+
+                closeButton.appendChild(imgB)
+                closeButton.appendChild(document.createTextNode('close'))
+
+                selectElement.appendChild(closeButton)
+
+                document.querySelector('#screen').appendChild(selectElement)
             }
         }
 
         function bBtn() {
             if(selectStatus == true) {
                 selectStatus = false
+                document.querySelector('#screen').removeChild(document.querySelector('#config'))
             }
         }
     }

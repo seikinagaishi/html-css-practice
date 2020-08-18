@@ -441,8 +441,34 @@ h1, p {
 }
 
 #config {
-    width: 80%;
-    height: 80%;
-    background-color: white;
-    margin: 10%;
+    width: 150px;
+    height: 120px;
+    background-color: #9a9d4c;
+    margin: -142px 20px 0;
+    color: white;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 6px;
+    position: absolute;
+}
+
+#config .buttonBlock, .closeBlock {
+    display: flex;
+    align-items: center;
+}
+
+#config .buttonBlock {
+    font-size: 8px;
+}
+
+#config .buttonBlock .buttonImg {
+    margin: 3px 10px 3px 3px;
+}
+
+#config .closeBlock {
+    float: right;
+    margin: 4px 6px 4px 4px;
+}
+
+#config .closeBlock img {
+    margin-right: 4px;
 }
