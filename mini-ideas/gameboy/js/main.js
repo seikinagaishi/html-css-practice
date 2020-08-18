@@ -155,14 +155,14 @@ function startGame() {
 
                 selectElement.appendChild(closeButton)
 
-                document.querySelector('#screen').appendChild(selectElement)
+                screen.appendChild(selectElement)
             }
         }
 
         function bBtn() {
             if(selectStatus == true) {
                 selectStatus = false
-                document.querySelector('#screen').removeChild(document.querySelector('#config'))
+                screen.removeChild(document.querySelector('#config'))
             }
         }
     }
