@@ -119,7 +119,6 @@ function startGame() {
         function selectBtn() {
             if(gameEnded == false && selectStatus == false) {
                 selectStatus = true
-                // document.querySelector('#config').style.display = 'block';
 
                 var selectElement = document.createElement('div')
                 selectElement.setAttribute('id', 'config')
