@@ -1,0 +1,208 @@
+* {
+    outline: 0;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'ZCOOL QingKe HuangYou', cursive;
+}
+
+fieldset {
+    margin: auto;
+    padding: 2.5%;
+    width: 35%;
+    height: 50%;
+    border-radius: 5px;
+    background-color: #54FF9E;
+    border: none;
+    transition: all 0.5s;
+}
+
+.screen {
+    margin: 10px 0;
+    width: 80%;
+    height: 20%;
+    background-color: #048666;
+    border-radius: 5px;
+    border: none;
+    font-size: 40px;
+    color: #FFF;
+    padding: 0 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+button {
+    background-color: #0ebbb2;
+    border: none;
+    border-radius: 3px;
+    width: 15%;
+    height: 15%;
+    font-weight: bold;
+    color: #FFF;
+    margin: 5px;
+    font-size: 16px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.turnOff {
+    width: 15%;
+    height: 15%;
+}
+
+.number{
+    width: 25%;
+    height: 50px;
+}
+
+.op {
+    width: 37%;
+    height: 50px;
+}
+
+#numberPad {
+    display: flex;
+    flex-direction:  row;
+    flex-wrap: wrap;
+    height: 80%;
+    width: 60%;
+}
+
+.result {
+    width: 79%;
+    height: 50px;
+}
+
+#operators {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 80%;
+    width: 40%;
+}
+
+#keyboard {
+    margin: 10px auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+button:hover {
+    background-color: #FFF;
+    color: #000;
+    border: 1px solid;
+}
+
+@media screen and (max-width: 860px) {
+    .op, .result, .number {
+        height: 40px;
+    }
+
+    .turnOff {
+        width: 13%;
+        height: 13%;
+        font-size: 14px;
+    }
+
+    fieldset {
+        height: 40%;
+    }
+}
+
+@media screen and (max-width: 740px) {
+    .op, .result, .number {
+        height: 18px;
+        font-size: 10px;
+    }
+
+    .turnOff {
+        width: 11%;
+        height: 11%;
+        font-size: 10px;
+    }
+
+    fieldset {
+        height: 25%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    * {
+        filter: opacity(0);
+    }
+}
+
+@media screen and (max-height: 660px) {
+    .op, .result, .number {
+        height: 35px;
+    }
+
+    fieldset {
+        height: 42%;
+        width: 40%;
+    }
+
+    .turnOff {
+        width: 13%;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-height: 605px) {
+    .op, .result, .number {
+        height: 20px;
+        font-size: 12px;
+    }
+
+    fieldset {
+        height: 35%;
+        width: 40%;
+    }
+
+    .turnOff {
+        width: 12%;
+        font-size: 9px;
+    }
+}
+
+@media screen and (max-height: 505px) {
+    * {
+        filter: opacity(0);
+    }
+}
+
+.start {
+    position: absolute;
+    margin: auto;
+    width: 100%;
+    top: 30vh;
+}
+
+.start:hover {
+    font-size: 200%;
+}
+
+footer {
+    font-size: 14px;
+    position: absolute;
+    margin-top: 85vh;
+    background-color: #add8e6;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: #008000;
+    transition: all 0.3s;
+}
+
+footer a:hover {
+    color: #f00;
+    font-size: 110%;
+    font-weight: bold;
+}
