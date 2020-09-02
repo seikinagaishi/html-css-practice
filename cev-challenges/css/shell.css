@@ -16,8 +16,8 @@ body #container {
     left: 50%;
     transform: translate(-50%, -50%);
     border: 1px solid black;
-    width: 50vw;
-    height: 50vh;
+    width: 80vw;
+    height: 80vh;
     border-radius: 10px;
     padding: 2rem;
     background: #101013;
@@ -26,63 +26,56 @@ body #container {
 }
 
 body #container h1 {
-    font-size: 2.4rem;
-    margin-bottom: 2rem;
+    font-size: 1.8rem;
+    margin-bottom: 3.6rem;
 }
 
 body #container label {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
 }
 
 body #container label span {
-    font-size: 1.2rem;
+    font-size: 0.8rem;
     display: block;
     color: rgb(117, 115, 115)
 }
 
-body #container input {
+body #container textarea {
     width: 80%;
-    height: 15%;
+    height: 40%;
     border-radius: 3px;
     border: none;
     background-color: #3c3c3f;
     font: bold 1.2rem 'Open Sans';
     color: #ebe2e2;
-    padding: 0 1rem;
+    padding: 1rem;
+    overflow: hidden;
 }
 
-body #container input:focus {
-    border-bottom: 2px solid orange;
+body #container textarea:focus {
+    border-bottom: 1px solid orange;
 }
 
 body #container #send {
     border-radius: 0.2rem;
     background: orange;
     position: absolute;
-    margin-top: -5%;
-    left: 81%;
-    width: 4%;
-    height: 7%;
+    margin-top: 70px;
+    margin-left: -40px;
+    width: 30px;
+    height: 28px;
     color: white;
     
     cursor: pointer;
     border: none;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: inline;
     transition: 0.2s;
 }
 
 body #container #send:hover {
     background: white;
     color: black
-}
-
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
 }
 
 body article {
@@ -103,7 +96,7 @@ body article .block {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 10px;
+    margin: 7px;
     
     transition: 0.2s;
 }
@@ -123,8 +116,8 @@ button#back {
     width: 70px;
 
     position: absolute;
-    left: 48%;
-    top: 90%;
+    left: 45%;
+    top: 80%;
 
     transition: 0.2s
 }
@@ -153,4 +146,44 @@ footer a {
     margin: 0 2px;
     text-decoration: none;
     font-weight: bold;
+}
+
+@media (min-width: 850px) {
+    body #container {
+        width: 50vw;
+        height: 50vh;
+    }
+
+    body #container h1 {
+        font-size: 2.4rem;
+        margin-bottom: 2rem;
+    }
+    
+    body #container label {
+        font-size: 1.8rem;
+    }
+    
+    body #container label span {
+        font-size: 1.2rem;
+    }
+
+    body #container textarea {
+        height: 30%;
+    }
+    
+    body #container textarea:focus {
+        border-bottom: 2px solid orange;
+    }
+
+    body #container #send {
+        margin-top: 30px;
+    }
+
+    button#back {
+        left: 48%;
+    }
+
+    body article .block {
+        margin: 10px;
+    }
 }
