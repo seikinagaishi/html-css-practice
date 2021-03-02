@@ -3,26 +3,100 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
         <title>HTML n CSS Practice</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                text-align: center;
+                font-family: 'Quicksand', sans-serif;
+            }
+
+            h1, h3 {
+                background-color: black;
+                color: white;
+            }
+
+            h1, ul + h3{
+                padding-top: 5px;
+            }
+
+            h3 {
+                padding-bottom: 5px;
+            }
+
+            ul {
+                display: flex;
+                list-style-type: none;
+                justify-content: center;
+                margin: 20px;
+            }
+
+            li {
+                margin: 5px;
+                background-color: black;
+                padding: 5px;
+                border-radius: 5px;
+                transition: all 0.2s;
+                cursor: pointer;
+            }
+
+            li a {
+                color: white;
+                text-decoration: none;
+            }
+
+            li:hover {
+                background-color: orange;
+                color: black;
+            }
+
+        </style>
     </head>
 
     <body>
         <h1>Practice</h1>
         <h3>CEV Challenges</h3>
         <ul>
-            <li><a href="cev-challenges/ch01.html">CH01</a></li>
-            <li><a href="cev-challenges/ch02.html">CH02</a></li>
-            <li><a href="cev-challenges/ch03.html">CH03</a></li>
-            <li><a href="cev-challenges/ch04.html">CH04</a></li>
-            <li><a href="cev-challenges/ch05.html">CH05</a></li>
-            <li><a href="cev-challenges/ch06.html">CH06</a></li>
-            <li><a href="cev-challenges/ch07.html">CH07</a></li>
-            <li><a href="cev-challenges/ch08.html">CH08</a></li>
-            <li><a href="cev-challenges/ch09.html">CH09</a></li>
-            <li><a href="cev-challenges/ch10.html">CH10</a></li>
-            <li><a href="cev-challenges/ch11.html">CH11</a></li>
-            <li><a href="cev-challenges/ch12.html">CH12</a></li>
-            <li><a href="cev-challenges/ch13.html">CH13</a></li>
+            <li title="paragraph"><a href="cev-challenges/ch01.html">CH01</a></li>
+            <li title="image"><a href="cev-challenges/ch02.html">CH02</a></li>
+            <li title="order"><a href="cev-challenges/ch03.html">CH03</a></li>
+            <li title="list"><a href="cev-challenges/ch04.html">CH04</a></li>
+            <li title="card"><a href="cev-challenges/ch05.html">CH05</a></li>
+            <li title="transition list"><a href="cev-challenges/ch06.html">CH06</a></li>
+            <li title="media query"><a href="cev-challenges/ch07.html">CH07</a></li>
+            <li title="layout"><a href="cev-challenges/ch08.html">CH08</a></li>
+            <li title="transition"><a href="cev-challenges/ch09.html">CH09</a></li>
+            <li title="layout2"><a href="cev-challenges/ch10.html">CH10</a></li>
+        </ul>
+
+        <h3>Mini-ideas</h3>
+
+        <ul>
+            <li><a href="cev-challenges/news.html">NEWS</a></li>
+            <li><a href="cev-challenges/phone.html">PHONE</a></li>
+            <li><a href="cev-challenges/shell.html">SHELL</a></li>
+            <li><a href="cev-challenges/table.html">TABLE</a></li>
+            <li><a href="cev-challenges/window/index.html">WINDOW</a></li>
+            <li><a href="mini-ideas/gameboy/index.html">GAMEBOY</a></li>
+        </ul>
+
+        <h3>Copy-trial</h3>
+
+        <ul>
+            <li><a href="copy-trial/1-mixer/index.html">Mixer</a></li>
+        </ul>
+
+        <h3>Unfinished</h3>
+
+        <ul>
+            <li><a href="cev-challenges/password.html">PASSWORD</a></li>
+            <li><a href="cev-challenges/calculator/index.html">CALCULATOR</a></li>
         </ul>
     </body>
 </html>
