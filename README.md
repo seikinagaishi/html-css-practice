@@ -1,2 +1,2 @@
-# html-css-practice
+# Prática de HTML, CSS e Javascript
  
