@@ -1,0 +1,103 @@
+* {
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+body {
+    height: 100vh;
+    align-items: center;
+    background-color: rgb(192, 217, 240);
+}
+
+article, body {
+    display: flex;
+    justify-content: center;
+}
+
+article {
+    border: 2px solid black;
+    background-color: #2b2d31;
+    border-radius: 5px;
+    width: 500px;
+    height: 420px;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+#panel {
+    width: 100%;
+    height: 60px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f1f1f3;
+}
+
+.btn {
+    width: 50px;
+    height: 50px;
+    background-color: #2b2d31;
+    border: none;
+    border-radius: 5px;
+    margin: 0 5px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn:hover {
+    background-color: black;
+}
+
+.btn img {
+    width: 16px;
+}
+
+#gameField {
+    display: flex;
+    flex-wrap: wrap;
+    width: 440px;
+    height: 352px;
+    margin: auto;
+}
+
+.spot, .spot-bomb, .spot-flagged {
+    width: 40px;
+    height: 40px;
+    
+    margin: 2px;
+    border-radius: 5px;
+}
+
+.spot, .spot-flagged {
+    transition: 0.1s;
+    cursor: pointer;
+    background-color: #f1f1f3;
+}
+
+.spot-bomb, .spot-flagged {
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.spot-bomb {
+    background-image: url('../img/bomb.png');
+    background-color: #8f8f91;
+}
+
+.spot-flagged {
+    background-image: url('../img/flag.png');
+}
+
+.spot:hover, .spot-flagged:hover {
+    background-color: #c3c3c5;
+}
