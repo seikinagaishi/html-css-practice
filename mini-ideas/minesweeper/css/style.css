@@ -70,7 +70,7 @@ article {
     margin: auto;
 }
 
-.spot, .spot-bomb, .spot-flagged {
+.spot, .spot-bomb, .spot-flagged, .spotted {
     width: 40px;
     height: 40px;
     
@@ -98,6 +98,41 @@ article {
     background-image: url('../img/flag.png');
 }
 
+.spotted {
+    color: rgb(185, 44, 8);
+    background-color: #8f8f91;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 16pt;
+    cursor: default;
+}
+
 .spot:hover, .spot-flagged:hover {
     background-color: #c3c3c5;
+}
+
+/* footer */
+
+footer {
+    position: fixed;
+    bottom: 0;
+    height: 40px;
+    width: 100%;
+
+    background-color: #2b2d31;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    transition: 0.2s;
+}
+
+footer a:hover {
+    color: orange;
 }
