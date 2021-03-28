@@ -9,18 +9,21 @@ document.querySelector('article').addEventListener('contextmenu', (event) => {
 
 // Match Values
 var remainingFlags
+var ongoing = false
+var bombPosition = []
 
 // Selectors
 var setGame      = document.querySelector('#matchBtn')
 var board        = document.querySelector('#gameField')
 var flagCount    = document.querySelector('#flags')
-var bombPosition = []
+
 
 // Events
 setGame.addEventListener('click', startGame)
 
 // Functions
 function startGame() {
+    ongoing             = true
     board.innerHTML     = ''
     bombPosition        = []
     flagCount.innerText = bombAmount
@@ -59,14 +62,27 @@ function verifyIfBombExists(bomb, position) {
 }
 
 function checkSpot(spot) {
-    let position = spot.id
+    if(ongoing) {
+        if(spot.className == 'spot') {
+            let position = spot.id
 
-    if(bombFind(position)) {
-        bombFound(spot)
+            if(bombFind(position)) {
+                bombFound(spot)
+                ongoing = false
+            }
+        
+            else {
+                normalSpotFound(position)
+                checkIfGameClear()
+            }
+        }
     }
+}
 
-    else {
-        normalSpotFound(position)
+function checkIfGameClear() {
+    let untochedSpots = document.getElementsByClassName('spot')
+    if(untochedSpots.length == 0) {
+        ongoing = false
     }
 }
 
@@ -203,6 +219,7 @@ function bombFound(spot) {
     let interval = 300
     
     bombPosition.map( (bomb) => {
+        // There has to be a better way to do this :P
         setTimeout(function() {
             let bombSpot = document.getElementById(bomb)
             bombSpot.setAttribute('class', 'spot-bomb')
@@ -219,22 +236,26 @@ function bombFind(position) {
 function flag(spot, event) {
     event.preventDefault()
 
-    if(remainingFlags && spot.className == 'spot') {
-        remainingFlags--
-        flagCount.innerText = remainingFlags
-        spot.setAttribute('class', 'spot-flagged')
-
-        spot.addEventListener('contextmenu', (event) => deflag(spot, event))
+    if(ongoing) {
+        if(remainingFlags && spot.className == 'spot') {
+            remainingFlags--
+            flagCount.innerText = remainingFlags
+            spot.setAttribute('class', 'spot-flagged')
+    
+            spot.addEventListener('contextmenu', (event) => deflag(spot, event))
+        }
     }
 }
 
 function deflag(spot, event) {
     event.preventDefault()
 
-    if(spot.className == 'spot-flagged') {
-        remainingFlags++
-        flagCount.innerText = remainingFlags
-        spot.setAttribute('class', 'spot')
-        spot.addEventListener('contextmenu', (event) => flag(spot, event))
+    if(ongoing) {
+        if(spot.className == 'spot-flagged') {
+            remainingFlags++
+            flagCount.innerText = remainingFlags
+            spot.setAttribute('class', 'spot')
+            spot.addEventListener('contextmenu', (event) => flag(spot, event))
+        }
     }
 }
