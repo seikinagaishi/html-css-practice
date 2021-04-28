@@ -33,7 +33,7 @@ img.ch5 {
 }
 
 fieldset.borda1 {
-    width: 500px;
+    width: 50%;
     margin: 30px auto;
     background-color: white;
     transition: 0.1s all;
@@ -78,4 +78,10 @@ p.tag-title:hover {
     color: #000;
     border-radius: 3px;
     margin: 5px auto;
+}
+
+@media screen and (max-width: 550px) {
+    img.ch2 {
+        width: 200px;
+    }
 }
